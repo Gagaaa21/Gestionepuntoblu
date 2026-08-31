@@ -1,0 +1,1 @@
+ALTER TABLE public.operator_checkins ADD COLUMN IF NOT EXISTS note text;

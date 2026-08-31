@@ -1,0 +1,1 @@
+CREATE POLICY interventions_delete_owner ON public.interventions FOR DELETE TO authenticated USING (auth.uid() = created_by);

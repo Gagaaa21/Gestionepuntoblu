@@ -1,0 +1,1 @@
+DELETE FROM public.notifications WHERE NOT (kind = 'info' AND link = '/questionario');
