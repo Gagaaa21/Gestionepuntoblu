@@ -1,1 +1,0 @@
-ALTER TABLE public.transport_intra_tariffs ADD COLUMN IF NOT EXISTS kilometers numeric;
