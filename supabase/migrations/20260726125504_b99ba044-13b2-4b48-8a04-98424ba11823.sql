@@ -1,0 +1,8 @@
+CREATE POLICY block_suspended ON public.checklist_checks AS RESTRICTIVE FOR ALL TO authenticated USING (NOT public.is_suspended(auth.uid())) WITH CHECK (NOT public.is_suspended(auth.uid()));
+CREATE POLICY block_suspended ON public.checklist_completions AS RESTRICTIVE FOR ALL TO authenticated USING (NOT public.is_suspended(auth.uid())) WITH CHECK (NOT public.is_suspended(auth.uid()));
+CREATE POLICY block_suspended ON public.checklist_items AS RESTRICTIVE FOR ALL TO authenticated USING (NOT public.is_suspended(auth.uid())) WITH CHECK (NOT public.is_suspended(auth.uid()));
+CREATE POLICY block_suspended ON public.operator_checkins AS RESTRICTIVE FOR ALL TO authenticated USING (NOT public.is_suspended(auth.uid())) WITH CHECK (NOT public.is_suspended(auth.uid()));
+CREATE POLICY block_suspended ON public.transport_tariffs AS RESTRICTIVE FOR ALL TO authenticated USING (NOT public.is_suspended(auth.uid())) WITH CHECK (NOT public.is_suspended(auth.uid()));
+CREATE POLICY block_suspended ON public.transport_hospitals AS RESTRICTIVE FOR ALL TO authenticated USING (NOT public.is_suspended(auth.uid())) WITH CHECK (NOT public.is_suspended(auth.uid()));
+CREATE POLICY block_suspended ON public.transport_intra_tariffs AS RESTRICTIVE FOR ALL TO authenticated USING (NOT public.is_suspended(auth.uid())) WITH CHECK (NOT public.is_suspended(auth.uid()));
+CREATE POLICY block_suspended ON public.user_favorites AS RESTRICTIVE FOR ALL TO authenticated USING (NOT public.is_suspended(auth.uid())) WITH CHECK (NOT public.is_suspended(auth.uid()));

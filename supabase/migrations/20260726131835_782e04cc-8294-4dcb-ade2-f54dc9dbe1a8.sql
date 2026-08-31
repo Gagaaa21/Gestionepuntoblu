@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "hidden_routes_select_auth" ON public.hidden_routes;
